@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .top,.bottom{
+            width: 100%;
+            height: 2vw;
+            background-color: black;
+        }
+        .bottom{
+            position: absolute;
+            bottom: 0;
+        }
+        .title{
+            margin-top: 2vw;
+            font-size: 3.5vw;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            color: white;
+            -webkit-text-stroke: 0.25vw red;    
+        }
+        table,td,th{
+            margin-top: 2vw;
+            padding: 1vw 1.5vw;
+            font-size: 2vw;
+        }
+        th{
+            background-color: orangered;
+            color: white;
+            font-size: 2.4vw;
+        }
+        input{
+            width: 20vw;
+            font-size: 1.5vw;
+        }
+        .submit{
+            width: 10vw;
+            margin-right: 1vw;
+        }
+        .reset{
+            width: 10vw;
+            margin-left: 1vw;
+        }
+        .button{
+            width: 14vw;
+            margin-left: 2vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <p class="title">LIBRARY MANAGEMENT SYSTEM</p>
+
+    <form action="insert_library.php" method="post">
+        <center>
+        <table>
+            <tr>
+                <th colspan="2">Enter Book Records</th>
+            </tr>
+            <tr>
+                <td>Enter ISBN</td>
+                <td><input type="text" name="isbn" id=""></td>
+            </tr>
+            <tr>
+                <td>Enter Title</td>
+                <td><input type="text" name="title" id=""></td>
+            </tr>
+            <tr>
+                <td>Enter Author</td>
+                <td><input type="text" name="author" id=""></td>
+            </tr>
+            <tr>
+                <td>Enter Edition</td>
+                <td><input type="text" name="edition" id=""></td>
+            </tr>
+            <tr>
+                <td>Enter Publication</td>
+                <td><input type="text" name="publication" id=""></td>
+            </tr>
+        </table>
+        <input class="submit" type="submit" value="SUBMIT"><input class="reset" type="reset" value="RESET">
+        <a href="searchbook.html"><input class="button" type="button" value="SEARCH BOOK"></a>
+        </center>
+        
+    </form>
+    <div class="top" style="margin-top: 2.5vw;"></div>
+</body>
+</html>
